@@ -61,6 +61,12 @@ build CMakeFiles/ListaLigada.dir/ListaLigada.c.o: C_COMPILER__ListaLigada_unscan
   OBJECT_DIR = CMakeFiles/ListaLigada.dir
   OBJECT_FILE_DIR = CMakeFiles/ListaLigada.dir
 
+build CMakeFiles/ListaLigada.dir/ListaDuplamenteLigada.c.o: C_COMPILER__ListaLigada_unscanned_Debug /home/nava/CLionProjects/estrutura/noite/ListaLigada/ListaDuplamenteLigada.c || cmake_object_order_depends_target_ListaLigada
+  DEP_FILE = CMakeFiles/ListaLigada.dir/ListaDuplamenteLigada.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/ListaLigada.dir
+  OBJECT_FILE_DIR = CMakeFiles/ListaLigada.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ListaLigada
@@ -69,7 +75,7 @@ build CMakeFiles/ListaLigada.dir/ListaLigada.c.o: C_COMPILER__ListaLigada_unscan
 #############################################
 # Link the executable ListaLigada
 
-build ListaLigada: C_EXECUTABLE_LINKER__ListaLigada_Debug CMakeFiles/ListaLigada.dir/main.c.o CMakeFiles/ListaLigada.dir/ListaLigada.c.o
+build ListaLigada: C_EXECUTABLE_LINKER__ListaLigada_Debug CMakeFiles/ListaLigada.dir/main.c.o CMakeFiles/ListaLigada.dir/ListaLigada.c.o CMakeFiles/ListaLigada.dir/ListaDuplamenteLigada.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/ListaLigada.dir
   POST_BUILD = :

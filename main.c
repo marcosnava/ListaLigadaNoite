@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "ListaLigada.h"
+#include "ListaDuplamenteLigada.h"
 
 // constantes
 enum {
@@ -8,12 +8,14 @@ enum {
     OP_ADICIONAR,
     OP_EXCLUIR,
     OP_LISTAR,
+    OP_LISTAR_DEC,
     OP_SAIR
 };
 
 // protótipos
 int menu();
 void listar();
+void listarDec();
 
 int main(void)
 {
@@ -37,6 +39,9 @@ int main(void)
             case OP_LISTAR:
                 listar();
                 break;
+            case OP_LISTAR_DEC:
+                listarDec();
+                break;
             case OP_SAIR:
                 break;
             default:
@@ -55,6 +60,7 @@ int menu() {
     printf("%d - Adicionar\n", OP_ADICIONAR);
     printf("%d - Excluir\n", OP_EXCLUIR);
     printf("%d - Listar\n", OP_LISTAR);
+    printf("%d - Listar decrescente\n", OP_LISTAR_DEC);
     printf("%d - Sair\n", OP_SAIR);
     printf("Digite sua opcao: ");
     scanf("%d", &op);
@@ -64,12 +70,28 @@ int menu() {
 
 void listar() {
     int dado;
-    paraInicio();
+    if(inicio != NULL) {
+        paraInicio();
 
-    do {
-        if(getCorrente(&dado)) {
-            printf("%d ", dado);
-        }
-    } while(paraProximo());
-    printf("\n");
+        do {
+            if(getCorrente(&dado)) {
+                printf("%d ", dado);
+            }
+        } while(paraProximo());
+        printf("\n");
+    }
+}
+
+void listarDec() {
+    int dado;
+    if(inicio != NULL) {
+        paraFinal();
+
+        do {
+            if(getCorrente(&dado)) {
+                printf("%d ", dado);
+            }
+        } while(paraAnterior());
+        printf("\n");
+    }
 }

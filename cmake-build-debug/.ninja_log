@@ -1,6 +1,10 @@
 # ninja log v6
 6	468	1730249820993393168	CMakeFiles/ListaLigada.dir/main.c.o	b6f172e6b3d6d56e
-9	470	1730249820996393187	CMakeFiles/ListaLigada.dir/ListaLigada.c.o	6572560ba618721b
-470	604	1730249821457396175	ListaLigada	70bf67ca212e8bab
 1	39	1730250036117787454	CMakeFiles/ListaLigada.dir/ListaLigada.c.o	6572560ba618721b
 39	60	1730250036155787701	ListaLigada	70bf67ca212e8bab
+12	172	1730847201571666553	CMakeFiles/ListaLigada.dir/ListaLigada.c.o	6572560ba618721b
+11	275	1730847201570666552	CMakeFiles/ListaLigada.dir/main.c.o	b6f172e6b3d6d56e
+13	287	1730847201572666554	CMakeFiles/ListaLigada.dir/ListaDuplamenteLigada.c.o	d4b0797034077251
+287	403	1730847201847666775	ListaLigada	2db9fa67fb7fc317
+2	77	1730847340873778530	CMakeFiles/ListaLigada.dir/main.c.o	b6f172e6b3d6d56e
+77	162	1730847340948778591	ListaLigada	2db9fa67fb7fc317
